@@ -101,6 +101,7 @@ def predicted():
              electors = electors,
              cname = cname,
              ptyp = ptyp,
+             tcoat=tcoat,
              icu = icu,
              ccount = ccount, 
              res = results)
