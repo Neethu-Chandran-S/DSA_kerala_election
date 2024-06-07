@@ -5,7 +5,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-prediction_values = pd.read_csv("prediction_values.csv")
+prediction_values = pd.read_csv("prediction_values (1).csv")
 encoded_values = pd.read_csv("tobe_scaled.csv")
 
 @app.route('/')
