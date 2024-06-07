@@ -38,7 +38,6 @@ def predicted():
              electors = request.form['electors']
              cname = request.form['cname']
              ptyp = request.form["ptyp"]
-             tcoat = request.form['tcoat']
              icu = request.form['icu']
              ccount = request.form['ccount']
              
@@ -51,7 +50,6 @@ def predicted():
                                     "Electors": electors,
                                     "Constituency_Name": cname,
                                     "Party_Type_TCPD": ptyp,
-                                    "Turncoat": tcoat,
                                     "Incumbent": icu,
                                     "candidate_count_per_constituency": ccount
                                     }
@@ -73,8 +71,7 @@ def predicted():
              encoder.fit_transform(prediction_values["Party_Type_TCPD"])
              candidate_predictdf["Party_Type_TCPD"] = encoder.transform(candidate_predictdf["Party_Type_TCPD"])
 
-             encoder.fit_transform(prediction_values["Turncoat"])
-             candidate_predictdf["Turncoat"] = encoder.transform(candidate_predictdf["Turncoat"])
+             
 
              encoder.fit_transform(prediction_values["Incumbent"])
              candidate_predictdf["Incumbent"] = encoder.transform(candidate_predictdf["Incumbent"])
@@ -101,7 +98,6 @@ def predicted():
              electors = electors,
              cname = cname,
              ptyp = ptyp,
-             tcoat = tcoat,
              icu = icu,
              ccount = ccount, 
              res = results)
