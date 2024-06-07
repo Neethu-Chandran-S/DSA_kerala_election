@@ -98,12 +98,10 @@ def predicted():
              return render_template('pred.html',yr = yr, 
              sex = sex,
              party = party,
-             electors = electors,
              cname = cname,
              ptyp = ptyp,
              tcoat=tcoat,
              icu = icu,
-             ccount = ccount, 
              res = results)
      
              
