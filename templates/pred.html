@@ -100,11 +100,11 @@
                      <p>Year: <span id="year"></span></p>
                      <p>Sex: <span id="sex"></span></p>
                      <p>Party: <span id="party"></span></p>
-                    
+                     <p>Electors: <span id="electors"></span></p>
                      <p>Constituency Name: <span id="constituencyName"></span></p>
                      <p>Turncoat: <span id="turncoat"></span></p>
                      <p>Incumbent: <span id="incumbent"></span></p>
-                     
+                     <p>Candidate count: <span id="candidateCount"></span></p>
                      <p>Result :<span id="result"></span></p>
                    </div>
                  </div>
@@ -118,11 +118,11 @@
                     document.getElementById("year").innerText = "{{yr}}";
                     document.getElementById("sex").innerText = "{{sex}}";
                     document.getElementById("party").innerText = "{{party}}";
-                    
+                    document.getElementById("electors").innerText = "{{electors}}";
                     document.getElementById("constituencyName").innerText = "{{cname}}";
                     document.getElementById("turncoat").innerText = "{{tcoat}}";
                     document.getElementById("incumbent").innerText = "{{icu}}";
-                    
+                    document.getElementById("candidateCount").innerText = "{{ccount}}";
                     //document.getElementById("result").innerText = res;
             
                     // Show the container
@@ -269,7 +269,19 @@
         <a href="https://html.design/">DSA 7</a>
       </p>
     </div>
- 
+  </footer>
+  <!-- footer section -->
+
+
+  <!-- jQery -->
+  <script src="/static/js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="/static/js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="/static/js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
 
 </body>
 
