@@ -28,7 +28,7 @@ def contact():
 def predict():
     return render_template('predict.html')
 
-@app.route("/prediction", methods = ["POST"])
+@app.route("/prediction", methods = ["GET","POST"])
 def predicted():
         if request.method == 'POST':
              
@@ -40,7 +40,6 @@ def predicted():
              ptyp = request.form["ptyp"]
              tcoat = request.form['tcoat']
              icu = request.form['icu']
-             ccount = request.form['ccount']
              
 
              
@@ -53,7 +52,7 @@ def predicted():
                                     "Party_Type_TCPD": ptyp,
                                      "Turncoat": tcoat,
                                     "Incumbent": icu,
-                                    "candidate_count_per_constituency": ccount
+                                    
                                     }
              
              #dataframe
