@@ -35,7 +35,7 @@ def predicted():
              yr = request.form['yr'] 
              sex = request.form['sex']
              party = request.form['party'] 
-             electors = request.form['electors']
+             
              cname = request.form['cname']
              ptyp = request.form["ptyp"]
              tcoat = request.form['tcoat']
@@ -47,7 +47,7 @@ def predicted():
                                     "Year": yr,
                                     "Sex": sex,
                                     "Party": party,
-                                    "Electors": electors,
+                                    
                                     "Constituency_Name": cname,
                                     "Party_Type_TCPD": ptyp,
                                      "Turncoat": tcoat,
