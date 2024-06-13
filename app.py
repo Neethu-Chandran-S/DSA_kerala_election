@@ -60,22 +60,22 @@ def predicted():
 
              # encoding
              encoder = pickle.load(open('l_encoder.pkl','rb'))
-             #encoder.fit_transform(prediction_values["Sex"])
+             encoder.fit_transform(prediction_values["Sex"])
              candidate_predictdf['Sex'] = encoder.transform(candidate_predictdf['Sex'])
 
-             #encoder.fit_transform(prediction_values["Party"])
+             encoder.fit_transform(prediction_values["Party"])
              candidate_predictdf['Party'] = encoder.transform(candidate_predictdf['Party'])
 
-             #encoder.fit_transform(prediction_values["Constituency_Name"])
+             encoder.fit_transform(prediction_values["Constituency_Name"])
              candidate_predictdf["Constituency_Name"] = encoder.transform(candidate_predictdf["Constituency_Name"])
 
-             #encoder.fit_transform(prediction_values["Party_Type_TCPD"])
+             encoder.fit_transform(prediction_values["Party_Type_TCPD"])
              candidate_predictdf["Party_Type_TCPD"] = encoder.transform(candidate_predictdf["Party_Type_TCPD"])
 
-             #encoder.fit_transform(prediction_values["Turncoat"])
+             encoder.fit_transform(prediction_values["Turncoat"])
              candidate_predictdf["Turncoat"] = encoder.transform(candidate_predictdf["Turncoat"])
 
-             #encoder.fit_transform(prediction_values["Incumbent"])
+             encoder.fit_transform(prediction_values["Incumbent"])
              candidate_predictdf["Incumbent"] = encoder.transform(candidate_predictdf["Incumbent"])
              x = candidate_predictdf
              print(x)
@@ -83,7 +83,7 @@ def predicted():
              #scaling
              scalar = pickle.load(open('std_scalar.pkl','rb'))
 
-             #scalar.fit_transform(encoded_values)
+             scalar.fit_transform(encoded_values)
              candidate_predict_scaled = scalar.transform(candidate_predictdf)
              
              print("Scaled ", candidate_predict_scaled)
