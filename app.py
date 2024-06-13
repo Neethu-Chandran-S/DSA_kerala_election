@@ -42,7 +42,7 @@ def predicted():
              icu = request.form['icu']
              
 
-             
+             results=0
              candidate_prediction =  {
                                     "Year": yr,
                                     "Sex": sex,
