@@ -52,6 +52,7 @@ def predicted():
                                     "Party_Type_TCPD": ptyp,
                                      "Turncoat": tcoat,
                                     "Incumbent": icu,
+                                    "Results" :results
                                     
                                     }
              
